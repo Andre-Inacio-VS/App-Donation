@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center"> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <img class="img-item" src="../../assets/donate.svg" alt="Imagem de Solidariedade" />
+    <p>
+      Some people really need your help! Here’s how you can make a difference 😁
+    </p>
+    <ion-card [routerLink]="['/tabs/donate']">
+      <ion-item lines="none" class="item">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/hands-donate.svg" />
+        </ion-thumbnail>
+        <ion-label>Want to donate</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card [routerLink]="['/tabs/recive']">
+      <ion-item lines="none" class="item">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/collaboration.svg" />
+        </ion-thumbnail>
+        <ion-label>Need donations</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

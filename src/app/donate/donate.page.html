@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center"> Donate </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <ion-card (click)="donate('foods')">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/donate-food.svg" />
+        </ion-thumbnail>
+        <ion-label>Alimentos</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="donate('clothes')">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/donate-clothes.svg" />
+        </ion-thumbnail>
+        <ion-label>Roupas</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="donate('blood')">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/donate-blood.svg" />
+        </ion-thumbnail>
+        <ion-label>Sangue</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
